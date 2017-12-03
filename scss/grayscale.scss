@@ -1,3 +1,8 @@
+$color_medium: #808080;
+$color_dark: #505050;
+$color_black: #303030;
+
+
 @import 'variables.scss';
 @import 'mixins.scss';
 body {
@@ -9,7 +14,7 @@ body {
   height: 100%;
 
   color: white;
-  background-color: black;
+  background-color: $color_dark;
 }
 
 html {
@@ -61,19 +66,16 @@ a {
 
 #mainNav {
   font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-
   margin-bottom: 0;
-
   text-transform: uppercase;
-
   border-bottom: 1px solid fade-out(white, .7);
-  background-color: black;
   .navbar-toggler {
     font-size: 14px;
 
     padding: 11px;
 
     color: white;
+
     border: 1px solid white;
   }
   .navbar-brand {
@@ -81,6 +83,11 @@ a {
   }
   a {
     color: white;
+    text-shadow:
+      -1px -1px 0 #000,
+       1px -1px 0 #000,
+      -1px  1px 0 #000,
+       1px  1px 0 #000;
   }
   .navbar-nav {
     .nav-item {
@@ -100,8 +107,8 @@ a {
     }
   }
   @media(min-width:992px) {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 
     -webkit-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
     -moz-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
@@ -109,13 +116,15 @@ a {
     letter-spacing: 1px;
 
     border-bottom: none;
-    background: transparent;
+    // background: transparent;
+    background: $color_dark;
+    opacity: .7;
     &.navbar-shrink {
       padding-top: 10px;
       padding-bottom: 10px;
 
       border-bottom: 1px solid fade-out(white, .7);
-      background: black;
+      opacity: 1;
     }
     .nav-link.active {
       outline: none;
@@ -137,8 +146,14 @@ a {
   text-align: center;
 
   color: white;
+
+  text-shadow:
+    -1px -1px 0 #000,
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
   background: url('../img/orchester2.jpg') no-repeat bottom center scroll;
-  background-color: black;
+  background-color: $color_dark;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -168,36 +183,24 @@ a {
   }
 }
 
-.btn-circle {
-  font-size: 26px;
-
-  width: 55px;
-  height: 55px;
-  margin-top: 15px;
-  line-height: 45px;
-
-  -webkit-transition: background 0.3s ease-in-out;
-  -moz-transition: background 0.3s ease-in-out;
-  transition: background 0.3s ease-in-out;
-
-  color: white;
-  border: 2px solid white;
-  border-radius: 100% !important;
-  background: transparent;
-  &:focus,
-  &:hover {
-    color: white;
-    outline: none;
-    background: fade-out(white, .9);
-  }
-}
-
 .content-section {
-  padding-top: 150px;
-  padding-bottom: 150px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-.info-section {
+.info-section{
+  background-color: $color_medium;
+  // background: url('../img/noten2.GIF') repeat center center scroll;
+}
+
+// .pic-1-section{
+//     background: url('../img/geigenspieler2.jpg') repeat center center scroll;
+//     h2{
+//       padding: 50px;
+//     }
+//   }
+
+.termine-section {
   color: white;
   background: url('../img/noten2.GIF') no-repeat center center scroll;
   background-color: white;
@@ -216,17 +219,10 @@ a {
   }
 }
 
-#map {
-  width: 100%;
-  height: 300px;
-}
 @media(min-width:992px) {
   .content-section {
-    padding-top: 200px;
-    padding-bottom: 200px;
-  }
-  #map {
-    height: 350px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
 
@@ -274,6 +270,7 @@ ul.banner-social-buttons {
 }
 
 footer {
+  background-color: $color_black;
   padding: 50px 0;
   p {
     font-size: 14px;
