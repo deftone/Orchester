@@ -119,9 +119,20 @@ a {
       .masthead .intro-body .intro-text {
         font-size: 22px; } }
 
+.red {
+  color: red; }
+
 .content-section {
   padding-top: 10px;
   padding-bottom: 10px; }
+  .content-section h3 {
+    font-size: 20px; }
+  .content-section p {
+    font-family: sans-serif; }
+  .content-section a {
+    color: white;
+    text-decoration: underline;
+    text-decoration-style: solid; }
 
 .info-section {
   background-color: #808080; }
@@ -135,12 +146,41 @@ a {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
+  .termine-section h3 {
+    font-size: 20px; }
+  .termine-section p {
+    font-family: sans-serif; }
   .termine-section .termine {
+    background-color: white;
+    color: black;
+    opacity: .9;
+    border: 2px solid black;
+    padding: 5px; }
+  .termine-section .galery {
     background-color: white;
     color: black;
     opacity: 1;
     border: 2px solid black;
-    padding: 5px; }
+    padding: 5px;
+    /*** JUMBOTRON ***/ }
+    .termine-section .galery .jumbotron {
+      height: 30rem;
+      padding-top: 10rem;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat; }
+
+.jumbotron-laptop {
+  background-image: url("../img/orchester1.jpg"); }
+
+.jumbotron-spagat {
+  background-image: url("../img/orchester2.jpg"); }
+
+.jumbotron-books {
+  background-image: url("../img/querfloetenspieler.jpeg"); }
+
+.jumbotron-books2 {
+  background-image: url("../img/geigenspieler1.jpg"); }
 
 @media (min-width: 992px) {
   .content-section {

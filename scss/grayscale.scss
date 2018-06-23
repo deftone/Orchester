@@ -183,9 +183,27 @@ a {
   }
 }
 
+.red{
+  color: red;
+}
+
 .content-section {
   padding-top: 10px;
   padding-bottom: 10px;
+
+  h3{
+    font-size: 20px;
+  }
+
+  p{
+    font-family: sans-serif;
+  }
+
+  a{
+    color: white;
+    text-decoration: underline;
+    text-decoration-style: solid;
+  }
 }
 
 .info-section{
@@ -193,13 +211,7 @@ a {
   // background: url('../img/noten2.GIF') repeat center center scroll;
 }
 
-// .pic-1-section{
-//     background: url('../img/geigenspieler2.jpg') repeat center center scroll;
-//     h2{
-//       padding: 50px;
-//     }
-//   }
-
+//todo: rename to partitur background
 .termine-section {
   color: white;
   background: url('../img/noten2.GIF') no-repeat center center scroll;
@@ -210,14 +222,69 @@ a {
   -o-background-size: cover;
   background-size: cover;
 
+  h3{
+    font-size: 20px;
+  }
+
+  p{
+    font-family: sans-serif;
+  }
+
   .termine{
     background-color: white;
     color: black;
-    opacity: 1;
+    opacity: .9;
     border: 2px solid black;
     padding: 5px;
+    }
+    
+    .galery{
+      background-color: white;
+      color: black;
+      opacity: 1;
+      border: 2px solid black;
+      padding: 5px;
+
+    /*** JUMBOTRON ***/
+    .jumbotron {
+      height: 30rem;
+      padding-top: 10rem;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
   }
 }
+
+.jumbotron-laptop{
+  background-image: url("../img/orchester1.jpg");
+}
+
+.jumbotron-spagat{
+  background-image: url("../img/orchester2.jpg");
+}
+
+.jumbotron-books{
+  background-image: url("../img/querfloetenspieler.jpeg");
+}
+
+.jumbotron-books2{
+  background-image: url("../img/geigenspieler1.jpg");
+}
+
+// .slick-prev:after {
+//   content: ">";
+//   color: red;
+//   font-size: 30px;
+// }
+//
+// .slick-next:before {
+//   content: "<";
+//   color: red;
+//   font-size: 30px;
+// }
+
+//https://stackoverflow.com/questions/29876185/change-the-arrow-buttons-in-slick-slider
 
 @media(min-width:992px) {
   .content-section {
