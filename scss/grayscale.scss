@@ -152,7 +152,7 @@ a {
      1px -1px 0 #000,
     -1px  1px 0 #000,
      1px  1px 0 #000;
-  background: url('../img/orchester2.jpg') no-repeat bottom center scroll;
+  background: url('../img/orchesterJanuar.jpg') no-repeat center center scroll;
   background-color: $color_dark;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -214,15 +214,19 @@ a {
 //todo: rename to partitur background
 .termine-section {
   color: white;
-  background: url('../img/noten2.GIF') no-repeat center center scroll;
+  background: url('../img/PartiturAlleStimmen.jpg') no-repeat center center scroll;
   background-color: white;
-  opacity: .8;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 
+  p{
+    text-align: left;
+  }
+
   h3{
+    text-align: left;
     font-size: 20px;
   }
 
@@ -233,11 +237,10 @@ a {
   .termine{
     background-color: white;
     color: black;
-    opacity: .9;
     border: 2px solid black;
     padding: 5px;
     }
-    
+
     .galery{
       background-color: white;
       color: black;
@@ -256,21 +259,14 @@ a {
   }
 }
 
-.jumbotron-laptop{
-  background-image: url("../img/orchester1.jpg");
+.jumbotron-orchester1{
+  background-image: url("../img/orchesterKonzertGross.jpg");
 }
 
-.jumbotron-spagat{
-  background-image: url("../img/orchester2.jpg");
+.jumbotron-orchester2{
+  background-image: url("../img/orchesterJanuar.jpg");
 }
 
-.jumbotron-books{
-  background-image: url("../img/querfloetenspieler.jpeg");
-}
-
-.jumbotron-books2{
-  background-image: url("../img/geigenspieler1.jpg");
-}
 
 // .slick-prev:after {
 //   content: ">";
