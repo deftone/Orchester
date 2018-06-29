@@ -1,7 +1,22 @@
-$color_medium: #808080;
-$color_dark: #505050;
-$color_black: #303030;
+// $color_medium: #852866;  //dunkles lila
+// $color_dark: #87005A;   //mittleres lila
+// $color_black: #4C0033;   // dunkles lila
 
+$color_medium: #397FBF;  //dunkles blau
+$color_dark: #0063BF;   //mittleres blau
+$color_black: #003A70;   // dunkles blau
+
+// $color_medium: #00855E;  //dunkles gruen
+// $color_dark: #00694A;   //mittleres gruen
+// $color_black: #004531;   // dunkles gruen
+
+// $color_medium: #990099;  //dunkles rose
+// $color_dark: #740794;   //mittleres lila
+// $color_black: #491178;   // dunkles lila
+
+// $color_medium: #808080;
+// $color_dark: #505050;
+// $color_black: #303030;
 
 @import 'variables.scss';
 @import 'mixins.scss';
@@ -221,16 +236,24 @@ a {
   -o-background-size: cover;
   background-size: cover;
 
-  p{
-    text-align: left;
+  .noPadding{
+    padding: 0;
+    margin: 0;
+  }
+
+  h2, h5{
+    color: $color_black;
   }
 
   h3{
+    color: $color_black;
     text-align: left;
     font-size: 20px;
   }
 
   p{
+    color: $color_black;
+    text-align: left;
     font-family: sans-serif;
   }
 
@@ -248,15 +271,41 @@ a {
       border: 2px solid black;
       padding: 5px;
 
-    /*** JUMBOTRON ***/
-    .jumbotron {
-      height: 30rem;
-      padding-top: 10rem;
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
+      h2{
+        margin-bottom: 0;
+      }
+
+      .buttons{
+        padding-bottom: 2px;
+      }
+      .button{
+        font-family: sans-serif;
+        background-color: $color_dark;
+        border-radius: 10px;
+        padding: 2px 5px;
+        color: white;
+      }
+
+      a:hover{
+          color: white;
+          background-color: $color_black;
+          cursor: pointer;
+        }
+
+      /*** JUMBOTRON ***/
+      .jumbotron {
+        height: 30rem;
+        padding-top: 10rem;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
     }
-  }
+}
+
+.buttons{
+  display: flex;
+  justify-content: space-between;
 }
 
 .jumbotron-orchester1{
