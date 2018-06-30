@@ -151,51 +151,48 @@ a {
   }
 }
 
-.masthead {
-  display: table;
+.landingpage {
+  //less than 768px — extra small (xs)
+  @media(max-width:768px) {
+    background: url('../img/orchesterJanuar_680px.jpg') no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+  }
 
-  width: 100%;
-  height: auto;
-  padding: 200px 0;
+  // 768-991px — small (sm)
+  @media only screen and (min-width: 76px) and (max-width: 991px){
+    background: url('../img/orchesterJanuar_991px.jpg') no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+  }
 
-  text-align: center;
+  //992-1199px — medium (md)
+    @media only screen and (min-width: 992px) and (max-width: 1199px){
+    background: url('../img/orchesterJanuar_1200px.jpg') no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+  }
 
-  color: white;
-
-  text-shadow:
-    -1px -1px 0 #000,
-     1px -1px 0 #000,
-    -1px  1px 0 #000,
-     1px  1px 0 #000;
-  background: url('../img/orchesterJanuar.jpg') no-repeat center center scroll;
-  background-color: $color_dark;
+  //greater than 1199px — large (lg)
+  @media(min-width:1200px) {
+  background: url('../img/orchesterJanuar_2000px.jpg') no-repeat center center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  .intro-body {
-    display: table-cell;
+  height: 100%;
+  }
 
-    vertical-align: bottom;
-    .brand-heading {
-      font-size: 50px;
-    }
-    .intro-text {
-      font-size: 18px;
-    }
-  }
-  @media(min-width:768px) {
-    height: 100%;
-    padding: 0;
-    .intro-body {
-      .brand-heading {
-        font-size: 100px;
-      }
-      .intro-text {
-        font-size: 22px;
-      }
-    }
-  }
 }
 
 .red{
@@ -223,9 +220,21 @@ a {
 
 .info-section{
   background-color: $color_medium;
-  // background: url('../img/noten2.GIF') repeat center center scroll;
+
+
 }
 
+.blocksatz{
+  text-align: justify;
+}
+
+.header_links{
+  text-align: left;
+}
+
+.header_rechts{
+  text-align: right;
+}
 //todo: rename to partitur background
 .termine-section {
   color: white;

@@ -89,35 +89,39 @@ a {
         #mainNav .nav-link.active:hover {
           color: white; } }
 
-.masthead {
-  display: table;
-  width: 100%;
-  height: auto;
-  padding: 200px 0;
-  text-align: center;
-  color: white;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px  1px 0 #000, 1px  1px 0 #000;
-  background: url("../img/orchesterJanuar.jpg") no-repeat center center scroll;
-  background-color: #0063BF;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
-  .masthead .intro-body {
-    display: table-cell;
-    vertical-align: bottom; }
-    .masthead .intro-body .brand-heading {
-      font-size: 50px; }
-    .masthead .intro-body .intro-text {
-      font-size: 18px; }
-  @media (min-width: 768px) {
-    .masthead {
-      height: 100%;
-      padding: 0; }
-      .masthead .intro-body .brand-heading {
-        font-size: 100px; }
-      .masthead .intro-body .intro-text {
-        font-size: 22px; } }
+@media (max-width: 768px) {
+  .landingpage {
+    background: url("../img/orchesterJanuar_680px.jpg") no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: auto; } }
+@media only screen and (min-width: 76px) and (max-width: 991px) {
+  .landingpage {
+    background: url("../img/orchesterJanuar_991px.jpg") no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%; } }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .landingpage {
+    background: url("../img/orchesterJanuar_1200px.jpg") no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%; } }
+@media (min-width: 1200px) {
+  .landingpage {
+    background: url("../img/orchesterJanuar_2000px.jpg") no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%; } }
 
 .red {
   color: red; }
@@ -136,6 +140,15 @@ a {
 
 .info-section {
   background-color: #397FBF; }
+
+.blocksatz {
+  text-align: justify; }
+
+.header_links {
+  text-align: left; }
+
+.header_rechts {
+  text-align: right; }
 
 .termine-section {
   color: white;
