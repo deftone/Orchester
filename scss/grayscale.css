@@ -103,9 +103,8 @@ a {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    width: 100%;
-    height: auto; } }
-@media only screen and (min-width: 76px) and (max-width: 991px) {
+    height: 100%; } }
+@media only screen and (min-width: 769px) and (max-width: 991px) {
   .landingpage {
     background: url("../img/orchesterJanuar_991px.jpg") no-repeat center center scroll;
     -webkit-background-size: cover;
@@ -158,6 +157,7 @@ a {
   text-align: right; }
 
 .termine-section {
+  display: flex;
   color: white;
   background: url("../img/PartiturAlleStimmen.jpg") no-repeat center center scroll;
   background-color: white;

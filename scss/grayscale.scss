@@ -175,12 +175,11 @@ a {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    width: 100%;
-    height: auto;
+    height: 100%;
   }
 
   // 768-991px — small (sm)
-  @media only screen and (min-width: 76px) and (max-width: 991px){
+  @media only screen and (min-width: 769px) and (max-width: 991px){
     background: url('../img/orchesterJanuar_991px.jpg') no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -253,6 +252,7 @@ a {
 }
 //todo: rename to partitur background
 .termine-section {
+  display: flex;
   color: white;
   background: url('../img/PartiturAlleStimmen.jpg') no-repeat center center scroll;
   background-color: white;
