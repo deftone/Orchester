@@ -210,6 +210,61 @@ a {
 
 }
 
+.container_media{
+  img{
+    //less than 768px — extra small (xs)
+    @media(max-width:768px) {
+      padding: 15px;
+      height: auto;
+      width: auto;
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    // 768-991px — small (sm)
+    @media only screen and (min-width: 769px) and (max-width: 991px){
+      padding: 15px;
+      height: auto;
+      width: auto;
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    //992-1199px — medium (md)
+      @media only screen and (min-width: 992px) and (max-width: 1199px){
+        padding: 25px;
+        height: auto;
+        width: auto;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    //greater than 1199px — large (lg)
+    @media(min-width:1200px) {
+      padding: 10px 50px;
+      height: auto;
+      width: auto;
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+}
+
+.container_media_side{
+  @extend .container_media;
+  width: 30%;
+}
+
+.container_side{
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  padding: 15px;
+  width: 70%;
+}
+
+
 .red{
   color: red;
 }
@@ -233,23 +288,41 @@ a {
   }
 }
 
-.info-section{
-  background-color: $color_medium;
-
-
+.center{
+  text-align: center;
 }
 
 .blocksatz{
   text-align: justify;
+  padding: 10px 35px;
+  margin: 0;
 }
 
-.header_links{
+.header_left{
+  padding-top: 40px;
+  padding-left: 50px;
+  margin: 0;
   text-align: left;
 }
 
-.header_rechts{
+.header_right{
+  padding-top: 40px;
+  padding-left: 50px;
+  margin: 0;
   text-align: right;
 }
+
+.background_medium{
+  background-color: $color_medium;
+}
+
+.info-section{
+  background-color: $color_medium;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 //todo: rename to partitur background
 .termine-section {
   display: flex;
@@ -261,10 +334,26 @@ a {
   -o-background-size: cover;
   background-size: cover;
 
+
+
   .noPadding{
     padding: 0;
     margin: 0;
   }
+
+  .p-5{
+    .no_padding_top{
+      padding-top: 0;
+      margin-top: 0;
+    }
+
+    .no_padding_bottom{
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+  }
+
+
 
   h2, h5{
     color: $color_black;

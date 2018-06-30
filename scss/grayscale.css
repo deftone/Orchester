@@ -129,6 +129,46 @@ a {
     background-size: cover;
     height: 100%; } }
 
+@media (max-width: 768px) {
+  .container_media img, .container_media_side img {
+    padding: 15px;
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    max-height: 100%; } }
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+  .container_media img, .container_media_side img {
+    padding: 15px;
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    max-height: 100%; } }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .container_media img, .container_media_side img {
+    padding: 25px;
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    max-height: 100%; } }
+@media (min-width: 1200px) {
+  .container_media img, .container_media_side img {
+    padding: 10px 50px;
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    max-height: 100%; } }
+
+.container_media_side {
+  width: 30%; }
+
+.container_side {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  padding: 15px;
+  width: 70%; }
+
 .red {
   color: red; }
 
@@ -144,17 +184,34 @@ a {
     text-decoration: underline;
     text-decoration-style: solid; }
 
-.info-section {
-  background-color: #397FBF; }
+.center {
+  text-align: center; }
 
 .blocksatz {
-  text-align: justify; }
+  text-align: justify;
+  padding: 10px 35px;
+  margin: 0; }
 
-.header_links {
+.header_left {
+  padding-top: 40px;
+  padding-left: 50px;
+  margin: 0;
   text-align: left; }
 
-.header_rechts {
+.header_right {
+  padding-top: 40px;
+  padding-left: 50px;
+  margin: 0;
   text-align: right; }
+
+.background_medium {
+  background-color: #397FBF; }
+
+.info-section {
+  background-color: #397FBF;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .termine-section {
   display: flex;
@@ -168,6 +225,12 @@ a {
   .termine-section .noPadding {
     padding: 0;
     margin: 0; }
+  .termine-section .p-5 .no_padding_top {
+    padding-top: 0;
+    margin-top: 0; }
+  .termine-section .p-5 .no_padding_bottom {
+    padding-bottom: 0;
+    margin-bottom: 0; }
   .termine-section h2, .termine-section h5 {
     color: #003A70; }
   .termine-section h3 {
