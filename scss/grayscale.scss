@@ -18,6 +18,8 @@ $color_black: #003A70;   // dunkles blau
 // $color_dark: #505050;
 // $color_black: #303030;
 
+$max-width: 700px;
+
 @import 'variables.scss';
 @import 'mixins.scss';
 body {
@@ -76,6 +78,20 @@ a {
     text-decoration: none;
 
     color: darken($primary, 20%);
+  }
+}
+
+
+/*** GENERAL: MOBILE & DESKTOP SCREEN ***/
+@media only screen and (max-width: $max-width){
+  #hidden_mobile{
+    display: none;
+  }
+}
+
+@media only screen and (min-width: $max-width) {
+  #hidden_desktop{
+    display: none ;
   }
 }
 
