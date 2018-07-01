@@ -67,121 +67,6 @@
   <!-- bild ist im css -->
 </header>
 
-<!-- Info Section -->
-<section id="info" class="content-section text-center">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 mx-auto">
-                <h2>Infos</h2>
-                <section class="info-section">
-                    <div class="container">
-                        <div class="row align-items-center">
-                            <div class="col-md-4 order-2">
-                                <div class="p-5 no_pading_bottom">
-                                    <img class="img-fluid rounded-circle" src="img/orchesterKonzert.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="col-md-8 order-1">
-                                <div class="p-5 no_pading_bottom">
-                                    <h2 class="display-10 header_links">Das Orchester</h2>
-                                    <p class="blocksatz">Das Orchester Roßdorf ist ein sinfonisches Laienorchester. Unser noch junges
-                                        Orchester besteht seit Herbst 2017, als sich zum ersten Mal eine Gruppe
-                                        interessierter Laienmusiker zusammenfand. Schnell zeigte sich, dass wir die
-                                        gleichen Erwartungen hatten: in netter Atmosphäre unter fachkundiger Anleitung
-                                        schöne Stücke erarbeiten! Inzwischen besteht das Orchester aus ca. 25
-                                        Mitgliedern. Ob jung oder alt spielt keine Rolle – alle Altersgruppen können
-                                        mitspielen. Voraussetzung sind gute Kenntnisse auf dem Instrument (Holz-, Blech-
-                                        oder Streichinstrument) und Spaß am gemeinsamen Musizieren.
-                                    </p>
-
-
-                                </div>
-                            </div>
-
-                            <div class="col-md-4 order-3">
-                                <div class="p-5 no_pading_top">
-                                    <img class="img-fluid rounded-circle" src="img/geigenspielerin.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="col-md-8 order-4">
-                                <div class="p-5 no_pading_top">
-                                    <p class="blocksatz">  Unsere Stückauswahl
-                                      umfasst regelmäßig Werke aus unterschiedlichen Epochen von Barock bis Filmmusik.
-                                      Seit 2018 ist das Orchester ein Teil der Musikgruppen der evangelischen Kirche
-                                      Roßdorf. Wir haben zwei Arbeitsphasen pro Jahr mit einem Auftritt im Winter und
-                                      einem Sommerkonzert, sowie ein bis zwei Auftritte im Gottesdienst über das Jahr
-                                      verteilt.
-                                      Weitere Mitspieler sind willkommen!
-                                    </p>
-
-
-                                </div>
-                            </div>
-
-
-                        </div>
-                    </div>
-                </section>
-
-                <section>
-                    <div class="container">
-                        <div class="row align-items-center">
-                            <div class="col-md-4 order-1">
-                                <div class="p-5">
-                                    <img class="img-fluid rounded-circle" src="img/anja.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="col-md-8 order-2">
-                                <div class="p-5">
-                                    <h2 class="header_rechts">Die Dirigentin</h2>
-                                    <p class="blocksatz"> Anja Kempken studierte Schulmusik in Hannover, im Anschluss folgte ein
-                                        Klavierstudium in Darmstadt. Sie besuchte Kurse für Orchesterdirigieren in
-                                        Dresden bei Milko Kersten und Hans-Peter Preu. Vier Jahre lang leitete sie den
-                                        Kirchenchor der evangelischen Kirche in Weiterstadt. Durch ihre Arbeit mit
-                                        verschiedenen schulischen Musikensembles entstanden bereits mehrere Arrangements
-                                        für Orchester aus den Bereichen Pop- und Filmmusik. Anja Kempken ist
-                                        Musiklehrerin an einem Darmstädter Gymnasium.</p>
-                                </div>
-                            </div>
-
-
-                        </div>
-                    </div>
-                </section>
-
-
-                <section class="info-section">
-                    <div class="container">
-                        <div class="row align-items-center">
-                            <div class="col-md-4 order-2">
-                                <div class="p-5">
-                                    <img class="img-fluid rounded-circle" src="img/kirche_saal.png" alt="">
-                                </div>
-                            </div>
-                            <div class="col-md-8 order-1">
-                                <div class="p-5">
-                                    <h2 class="display-10 header_links">Die Proben</h2>
-                                    <p class="blocksatz"> Die Proben finden 14-tägig statt. Der Wochentag wechselt zwischen Donnerstag und
-                                        Freitag. Probenbeginn ist 19.30 Uhr, Probenende 21.30 Uhr. Probenort ist das
-                                        Gemeindehaus (Elisabeth-Haus) der evangelischen Kirche in Roßdorf, Eingang über
-                                        den Hof direkt hinter der Kirche. In den Schulferien finden keine Proben statt.
-                                        Den aktuellen Probenplan finden Sie unter
-                                        <a href=#termine>Termine</a>.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
-<!-- jetzt mit flexbox -->
 
 <!-- Info Section -->
 <section id="info" class="content-section">
@@ -192,7 +77,12 @@
       <!-- title -->
       <h2 class="header_left">Das Orchester</h2>
       <!-- flexbox container -->
-      <section class="info-section">
+      <section class="info-section-background">
+        <!-- mobile flex item only -->
+        <div class="container_media_side" role="img">
+          <img class="img-fluid rounded-circle" id="hidden_desktop" src="img/orchesterKonzert.jpg" alt="">
+        </div>
+
         <!-- flex item 1 -->
         <div class="container_side" role="contentinfo">
           <p class="blocksatz">Das Orchester Roßdorf ist ein sinfonisches Laienorchester. Unser noch junges
@@ -208,117 +98,83 @@
         <!-- flex item 2 -->
         <!-- todo: hier anderes bild und andere anordnung wenn sm oder xs -->
         <div class="container_media_side" role="img">
-          <img class="img-fluid rounded-circle" src="img/orchesterKonzert.jpg" alt="">
+          <img class="img-fluid rounded-circle" id="hidden_mobile" src="img/orchesterKonzert.jpg" alt="">
         </div>
       </section>
-      <section class="info-section">
+      <section class="info-section-background">
         <!-- new flex item line -->
         <!-- flex item 1 -->
         <div class="container_media_side" role="img">
-          <img class="img-fluid rounded-circle" src="img/geigenspielerin.jpg" alt="">
+          <img class="img-fluid rounded-circle" id="hidden_mobile" src="img/geigenspielerin.jpg" alt="">
         </div>
         <!-- flex item 2 -->
         <div class="container_side special_padding_bottom" role="content">
           <p class="blocksatz"> Unsere Stückauswahl
             umfasst regelmäßig Werke aus unterschiedlichen Epochen von Barock bis Filmmusik.
+            Eine Auflistung aller bisher gespielten Stücke befindet sich
+            <a href="todo"> todo hier</a>,
             Seit 2018 ist das Orchester ein Teil der Musikgruppen der evangelischen Kirche
             Roßdorf. Wir haben zwei Arbeitsphasen pro Jahr mit einem Auftritt im Winter und
             einem Sommerkonzert, sowie ein bis zwei Auftritte im Gottesdienst über das Jahr
             verteilt.
             Weitere Mitspieler sind willkommen!
           </p>
-
         </div>
       </section>
     </div>
+
+    <!-- smaller container for conductor part, standard background color -->
+    <div class="container">
+      <!-- title -->
+      <h2 class="header_right">Die Dirigentin</h2>
+      <!-- flexbox container -->
+      <section class="info-section">
+        <!-- flex item 1 -->
+        <!-- todo: hier anderes bild und andere anordnung wenn sm oder xs -->
+        <div class="container_media_side" role="img">
+          <img class="img-fluid rounded-circle" src="img/anja.jpg" alt="">
+        </div>
+        <!-- flex item 2 -->
+        <div class="container_side" role="contentinfo">
+          <p class="blocksatz">Anja Kempken studierte Schulmusik in Hannover, im Anschluss folgte ein
+              Klavierstudium in Darmstadt. Sie besuchte Kurse für Orchesterdirigieren in
+              Dresden bei Milko Kersten und Hans-Peter Preu. Vier Jahre lang leitete sie den
+              Kirchenchor der evangelischen Kirche in Weiterstadt. Durch ihre Arbeit mit
+              verschiedenen schulischen Musikensembles entstanden bereits mehrere Arrangements
+              für Orchester aus den Bereichen Pop- und Filmmusik. Anja Kempken ist
+              Musiklehrerin an einem Darmstädter Gymnasium.
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <!-- smaller container for rehearsal part, change background color -->
+    <div class="container background_medium">
+      <!-- title -->
+      <h2 class="header_left">Die Proben</h2>
+      <!-- flexbox container -->
+      <section class="info-section-background">
+        <!-- flex item 1 -->
+        <div class="container_side" role="contentinfo">
+          <p class="blocksatz"> Die Proben finden 14-tägig statt. Der Wochentag wechselt zwischen Donnerstag und
+              Freitag. Probenbeginn ist 19.30 Uhr, Probenende 21.30 Uhr. Probenort ist das
+              Gemeindehaus (Elisabeth-Haus) der evangelischen Kirche in Roßdorf, Eingang über
+              den Hof direkt hinter der Kirche. In den Schulferien finden keine Proben statt.
+              Den aktuellen Probenplan finden Sie unter
+              <a href=#termine>Termine</a>.
+          </p>
+        </div>
+        <!-- flex item 2 -->
+        <div class="container_media_side" role="img">
+          <img class="img-fluid rounded-circle" id="hidden_mobile" src="img/kirche_saal.png" alt="">
+        </div>
+      </section>
+    </div>
+
   </div>
 </section>
 
 
-
-                                <!-- </div>
-                            </div>
-
-                            <div class="col-md-4 order-3">
-                                <div class="p-5 no_pading_top">
-                                    <img class="img-fluid rounded-circle" src="img/geigenspielerin.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="col-md-8 order-4">
-                                <div class="p-5 no_pading_top">
-                                    <p class="blocksatz">  Unsere Stückauswahl
-                                      umfasst regelmäßig Werke aus unterschiedlichen Epochen von Barock bis Filmmusik.
-                                      Seit 2018 ist das Orchester ein Teil der Musikgruppen der evangelischen Kirche
-                                      Roßdorf. Wir haben zwei Arbeitsphasen pro Jahr mit einem Auftritt im Winter und
-                                      einem Sommerkonzert, sowie ein bis zwei Auftritte im Gottesdienst über das Jahr
-                                      verteilt.
-                                      Weitere Mitspieler sind willkommen!
-                                    </p>
-
-
-                                </div>
-                            </div>
-
-
-                        </div>
-                    </div>
-                </section>
-
-                <section>
-                    <div class="container">
-                        <div class="row align-items-center">
-                            <div class="col-md-4 order-1">
-                                <div class="p-5">
-                                    <img class="img-fluid rounded-circle" src="img/anja.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="col-md-8 order-2">
-                                <div class="p-5">
-                                    <h2 class="header_rechts">Die Dirigentin</h2>
-                                    <p class="blocksatz"> Anja Kempken studierte Schulmusik in Hannover, im Anschluss folgte ein
-                                        Klavierstudium in Darmstadt. Sie besuchte Kurse für Orchesterdirigieren in
-                                        Dresden bei Milko Kersten und Hans-Peter Preu. Vier Jahre lang leitete sie den
-                                        Kirchenchor der evangelischen Kirche in Weiterstadt. Durch ihre Arbeit mit
-                                        verschiedenen schulischen Musikensembles entstanden bereits mehrere Arrangements
-                                        für Orchester aus den Bereichen Pop- und Filmmusik. Anja Kempken ist
-                                        Musiklehrerin an einem Darmstädter Gymnasium.</p>
-                                </div>
-                            </div>
-
-
-                        </div>
-                    </div>
-                </section>
-
-
-                <section class="info-section">
-                    <div class="container">
-                        <div class="row align-items-center">
-                            <div class="col-md-4 order-2">
-                                <div class="p-5">
-                                    <img class="img-fluid rounded-circle" src="img/kirche_saal.png" alt="">
-                                </div>
-                            </div>
-                            <div class="col-md-8 order-1">
-                                <div class="p-5">
-                                    <h2 class="display-10 header_links">Die Proben</h2>
-                                    <p class="blocksatz"> Die Proben finden 14-tägig statt. Der Wochentag wechselt zwischen Donnerstag und
-                                        Freitag. Probenbeginn ist 19.30 Uhr, Probenende 21.30 Uhr. Probenort ist das
-                                        Gemeindehaus (Elisabeth-Haus) der evangelischen Kirche in Roßdorf, Eingang über
-                                        den Hof direkt hinter der Kirche. In den Schulferien finden keine Proben statt.
-                                        Den aktuellen Probenplan finden Sie unter
-                                        <a href=#termine>Termine</a>.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section> -->
-<!--
-            </div>
-        </div>
-    </div>
-</section> -->
 
 <!-- Termine Section -->
 <section id="termine" class="termine-section content-section text-center">

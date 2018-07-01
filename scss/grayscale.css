@@ -42,10 +42,10 @@ a {
     color: #1d9b6c; }
 
 /*** GENERAL: MOBILE & DESKTOP SCREEN ***/
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 991px) {
   #hidden_mobile {
     display: none; } }
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 991px) {
   #hidden_desktop {
     display: none; } }
 #mainNav {
@@ -129,16 +129,9 @@ a {
     background-size: cover;
     height: 100%; } }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 991px) {
   .container_media img, .container_media_side img {
-    padding: 15px;
-    height: auto;
-    width: auto;
-    max-width: 100%;
-    max-height: 100%; } }
-@media only screen and (min-width: 769px) and (max-width: 991px) {
-  .container_media img, .container_media_side img {
-    padding: 15px;
+    padding: 5px;
     height: auto;
     width: auto;
     max-width: 100%;
@@ -160,6 +153,9 @@ a {
 
 .container_media_side {
   width: 30%; }
+  @media (max-width: 991px) {
+    .container_media_side {
+      width: 50%; } }
 
 .container_side {
   display: inline-flex;
@@ -168,6 +164,15 @@ a {
   align-items: baseline;
   padding: 15px;
   width: 70%; }
+  @media (max-width: 991px) {
+    .container_side {
+      display: inline-flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: baseline;
+      padding: 0;
+      margin: 0;
+      width: 100%; } }
 
 .red {
   color: red; }
@@ -197,21 +202,50 @@ a {
   padding-left: 50px;
   margin: 0;
   text-align: left; }
+  @media (max-width: 991px) {
+    .header_left {
+      padding: 10px;
+      margin: 0;
+      text-align: center; } }
 
 .header_right {
   padding-top: 40px;
-  padding-left: 50px;
+  padding-right: 50px;
   margin: 0;
   text-align: right; }
+  @media (max-width: 991px) {
+    .header_right {
+      padding: 10px;
+      margin: 0;
+      text-align: center; } }
 
 .background_medium {
   background-color: #397FBF; }
 
-.info-section {
+.info-section-background {
   background-color: #397FBF;
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: row; }
+  @media (max-width: 991px) {
+    .info-section-background {
+      background-color: #397FBF;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; } }
+
+.info-section {
+  display: flex;
+  justify-content: center;
   align-items: center; }
+  @media (max-width: 991px) {
+    .info-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; } }
 
 .termine-section {
   display: flex;
