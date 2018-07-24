@@ -377,34 +377,14 @@ a {
   -o-background-size: cover;
   background-size: cover;
 
-
-
-  .noPadding{
-    padding: 0;
-    margin: 0;
-  }
-
-  .p-5{
-    .no_padding_top{
-      padding-top: 0;
-      margin-top: 0;
-    }
-
-    .no_padding_bottom{
-      padding-bottom: 0;
-      margin-bottom: 0;
-    }
-  }
-
-
-
-  h2, h5{
+  p, h2, h3, h5{
     color: $color_black;
   }
+
+  p, h3 {
+    text-align: left;}
 
   h3{
-    color: $color_black;
-    text-align: left;
     font-size: 20px;
   }
 
