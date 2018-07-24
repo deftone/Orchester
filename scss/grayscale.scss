@@ -400,9 +400,9 @@ a {
     color: black;
     border: 2px solid black;
     padding: 5px;
-    }
+  }
 
-    .galery{
+  .galery{
       background-color: white;
       color: black;
       opacity: 1;
@@ -413,37 +413,68 @@ a {
         margin-bottom: 0;
       }
 
-      .buttons{
-        padding-bottom: 2px;
-      }
-      .button{
-        font-family: sans-serif;
-        background-color: $color_dark;
-        border-radius: 10px;
-        padding: 2px 5px;
-        color: white;
+      /*
+      *  position: relative gives a new position context
+      */
+      .wrapper {
+        position: relative;
       }
 
-      a:hover{
+      /*
+      *  The .carousel properties are for styling only
+      *  These properties can be changed or removed
+      */
+      .carousel {
+        height: 400px;
+      }
+
+      /*
+      *  Position the #transparent element in the top-right
+      *  of the .wrapper element
+      */
+      #transparent {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        /*
+        *  Styling only, the below can be changed or removed
+        *  depending on your use case
+        */
+        height: 400px;
+
+        a {
           color: white;
-          background-color: $color_black;
-          cursor: pointer;
+          opacity: .5;
+          font-size: 100px;
+          padding-top: 130px;
+          .prev{
+            text-align: left !important;
+          }
+          .next{
+            text-align: right !important;
+          }
         }
+
+        a:hover{
+            color: white;
+            cursor: pointer;
+          }
+      }
+
+
+
+
 
       /*** JUMBOTRON ***/
       .jumbotron {
-        height: 30rem;
-        padding-top: 10rem;
+        height: 400px;
+        padding-top: 10px;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
       }
-    }
-}
-
-.buttons{
-  display: flex;
-  justify-content: space-between;
+   }
 }
 
 .jumbotron-orchester1{
@@ -454,20 +485,6 @@ a {
   background-image: url("../img/orchesterJanuar.jpg");
 }
 
-
-// .slick-prev:after {
-//   content: ">";
-//   color: red;
-//   font-size: 30px;
-// }
-//
-// .slick-next:before {
-//   content: "<";
-//   color: red;
-//   font-size: 30px;
-// }
-
-//https://stackoverflow.com/questions/29876185/change-the-arrow-buttons-in-slick-slider
 
 @media(min-width:992px) {
   .content-section {

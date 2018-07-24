@@ -279,31 +279,51 @@ a {
     opacity: 1;
     border: 2px solid black;
     padding: 5px;
+    /*
+    *  position: relative gives a new position context
+    */
+    /*
+    *  The .carousel properties are for styling only
+    *  These properties can be changed or removed
+    */
+    /*
+    *  Position the #transparent element in the top-right
+    *  of the .wrapper element
+    */
     /*** JUMBOTRON ***/ }
     .termine-section .galery h2 {
       margin-bottom: 0; }
-    .termine-section .galery .buttons {
-      padding-bottom: 2px; }
-    .termine-section .galery .button {
-      font-family: sans-serif;
-      background-color: #0063BF;
-      border-radius: 10px;
-      padding: 2px 5px;
-      color: white; }
-    .termine-section .galery a:hover {
-      color: white;
-      background-color: #003A70;
-      cursor: pointer; }
+    .termine-section .galery .wrapper {
+      position: relative; }
+    .termine-section .galery .carousel {
+      height: 400px; }
+    .termine-section .galery #transparent {
+      position: absolute;
+      top: 0;
+      right: 0;
+      /*
+      *  Styling only, the below can be changed or removed
+      *  depending on your use case
+      */
+      height: 400px; }
+      .termine-section .galery #transparent a {
+        color: white;
+        opacity: .5;
+        font-size: 100px;
+        padding-top: 130px; }
+        .termine-section .galery #transparent a .prev {
+          text-align: left !important; }
+        .termine-section .galery #transparent a .next {
+          text-align: right !important; }
+      .termine-section .galery #transparent a:hover {
+        color: white;
+        cursor: pointer; }
     .termine-section .galery .jumbotron {
-      height: 30rem;
-      padding-top: 10rem;
+      height: 400px;
+      padding-top: 10px;
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat; }
-
-.buttons {
-  display: flex;
-  justify-content: space-between; }
 
 .jumbotron-orchester1 {
   background-image: url("../img/orchesterKonzertGross.jpg"); }
