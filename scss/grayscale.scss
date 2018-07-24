@@ -243,10 +243,12 @@ a {
 
 .container_media_side{
   @extend .container_media;
-  width: 30%;
+  width: 40%;
+  padding: 20px;
 
   @media(max-width:991px){
-    width: 50%;
+    width: 80%;
+    padding: 10px;
   }
 }
 

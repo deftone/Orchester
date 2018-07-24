@@ -152,10 +152,12 @@ a {
     max-height: 100%; } }
 
 .container_media_side {
-  width: 30%; }
+  width: 40%;
+  padding: 20px; }
   @media (max-width: 991px) {
     .container_media_side {
-      width: 50%; } }
+      width: 80%;
+      padding: 10px; } }
 
 .container_side {
   display: inline-flex;

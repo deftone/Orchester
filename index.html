@@ -74,15 +74,17 @@
     <h2 class="center">Infos</h2>
     <!-- smaller container for orchester part, change background color -->
     <div class="container background_medium">
+
       <!-- title -->
-      <h2 class="header_left">Das Orchester</h2>
+      <h2 class="header_left" id="hidden_mobile">Das Orchester</h2>
       <!-- flexbox container -->
       <section class="info-section-background">
+
         <!-- mobile flex item only -->
         <div class="container_media_side"  id="hidden_desktop" role="img">
           <img class="img-fluid rounded-circle" id="hidden_desktop" src="img/orchesterKonzert.jpg" alt="">
         </div>
-
+        <h2 class="header_left" id="hidden_desktop">Das Orchester</h2>
         <!-- flex item 1 -->
         <div class="container_side" role="contentinfo">
           <p class="blocksatz">Das Orchester Roßdorf ist ein sinfonisches Laienorchester. Unser noch junges
@@ -96,7 +98,6 @@
           </p>
         </div>
         <!-- flex item 2 -->
-        <!-- todo: hier anderes bild und andere anordnung wenn sm oder xs -->
         <div class="container_media_side" role="img">
           <img class="img-fluid rounded-circle" id="hidden_mobile" src="img/orchesterKonzert.jpg" alt="">
         </div>
@@ -126,14 +127,21 @@
     <!-- smaller container for conductor part, standard background color -->
     <div class="container">
       <!-- title -->
-      <h2 class="header_right">Die Dirigentin</h2>
+      <h2 class="header_right" id="hidden_mobile">Die Dirigentin</h2>
       <!-- flexbox container -->
       <section class="info-section">
-        <!-- flex item 1 -->
-        <!-- todo: hier anderes bild und andere anordnung wenn sm oder xs -->
-        <div class="container_media_side" role="img">
-          <img class="img-fluid rounded-circle" src="img/anja.jpg" alt="">
+
+        <!-- mobile flex item only -->
+        <div class="container_media_side"  id="hidden_desktop" role="img">
+          <img class="img-fluid rounded-circle" id="hidden_desktop" src="img/anja.jpg" alt="">
         </div>
+
+        <!-- flex item 1 -->
+        <div class="container_media_side" id="hidden_mobile" role="img">
+          <img class="img-fluid rounded-circle" id="hidden_mobile" src="img/anja.jpg" alt="">
+        </div>
+
+        <h2 class="header_right" id="hidden_desktop">Die Dirigentin</h2>
         <!-- flex item 2 -->
         <div class="container_side" role="contentinfo">
           <p class="blocksatz">Anja Kempken studierte Schulmusik in Hannover, im Anschluss folgte ein
@@ -150,10 +158,18 @@
 
     <!-- smaller container for rehearsal part, change background color -->
     <div class="container background_medium">
+
       <!-- title -->
-      <h2 class="header_left">Die Proben</h2>
+      <h2 class="header_left" id="hidden_mobile">Die Proben</h2>
       <!-- flexbox container -->
       <section class="info-section-background">
+
+
+        <!-- mobile flex item only -->
+        <div class="container_media_side"  id="hidden_desktop" role="img">
+          <img class="img-fluid rounded-circle" id="hidden_desktop" src="img/kirche_saal.png" alt="">
+        </div>
+        <h2 class="header_left" id="hidden_desktop">Die Proben</h2>
         <!-- flex item 1 -->
         <div class="container_side" role="contentinfo">
           <p class="blocksatz"> Die Proben finden 14-tägig statt. Der Wochentag wechselt zwischen Donnerstag und
@@ -397,7 +413,7 @@
 
 
                 <p>Anja Kempken<br/>
-                    Auf dem Wingert 14 <br/>64380 Roßdorf
+                    <!-- Auf dem Wingert 14 <br/>64380 Roßdorf -->
                     <br>anja.kempken[at]online.de</a><br/>
                 </p>
 
