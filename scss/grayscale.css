@@ -265,19 +265,21 @@ a {
   .termine-section h3 {
     font-size: 20px; }
   .termine-section ul {
+    padding: 0px 30px;
     color: #003A70;
     text-align: left;
-    font-family: sans-serif; }
+    font-family: sans-serif;
+    list-style-type: circle; }
   .termine-section .termine {
     background-color: white;
     color: black;
-    border: 2px solid black;
+    border: 2px solid #003A70;
     padding: 5px; }
   .termine-section .galery {
     background-color: white;
     color: black;
     opacity: 1;
-    border: 2px solid black;
+    border: 2px solid #003A70;
     padding: 5px;
     /*
     *  position: relative gives a new position context
@@ -296,30 +298,29 @@ a {
     .termine-section .galery .wrapper {
       position: relative; }
     .termine-section .galery .carousel {
-      height: 400px; }
+      height: 500px; }
     .termine-section .galery #transparent {
       position: absolute;
       top: 0;
-      right: 0;
+      left: 0;
       /*
       *  Styling only, the below can be changed or removed
       *  depending on your use case
       */
-      height: 400px; }
+      height: 500px;
+      width: 910px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
       .termine-section .galery #transparent a {
         color: white;
-        opacity: .5;
-        font-size: 100px;
-        padding-top: 130px; }
-        .termine-section .galery #transparent a .prev {
-          text-align: left !important; }
-        .termine-section .galery #transparent a .next {
-          text-align: right !important; }
+        opacity: .7;
+        font-size: 100px; }
       .termine-section .galery #transparent a:hover {
         color: white;
         cursor: pointer; }
     .termine-section .galery .jumbotron {
-      height: 400px;
+      height: 500px;
       padding-top: 10px;
       background-size: cover;
       background-position: center;

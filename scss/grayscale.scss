@@ -390,23 +390,28 @@ a {
 
 
   ul{
+    padding: 0px 30px;
     color: $color_black;
     text-align: left;
     font-family: sans-serif;
+    list-style-type: circle;
   }
+
+
 
   .termine{
     background-color: white;
     color: black;
-    border: 2px solid black;
+    border: 2px solid $color_black;
     padding: 5px;
   }
 
+//todo: hier verschiedene groessen fuer XS, SM, MD, LG, dann sollte es hoffentlich klappen!!
   .galery{
       background-color: white;
       color: black;
       opacity: 1;
-      border: 2px solid black;
+      border: 2px solid $color_black;
       padding: 5px;
 
       h2{
@@ -425,7 +430,7 @@ a {
       *  These properties can be changed or removed
       */
       .carousel {
-        height: 400px;
+        height: 500px;
       }
 
       /*
@@ -435,25 +440,21 @@ a {
       #transparent {
         position: absolute;
         top: 0;
-        right: 0;
+        left: 0;
 
         /*
         *  Styling only, the below can be changed or removed
         *  depending on your use case
         */
-        height: 400px;
-
+        height: 500px;
+        width: 910px;  //in lg  beide anpassen fuer md, sm, xs! auch an den anderen stellen@@
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         a {
           color: white;
-          opacity: .5;
+          opacity: .7;
           font-size: 100px;
-          padding-top: 130px;
-          .prev{
-            text-align: left !important;
-          }
-          .next{
-            text-align: right !important;
-          }
         }
 
         a:hover{
@@ -463,12 +464,9 @@ a {
       }
 
 
-
-
-
       /*** JUMBOTRON ***/
       .jumbotron {
-        height: 400px;
+        height: 500px;  //images are 3680x2000px 368x200 739x400
         padding-top: 10px;
         background-size: cover;
         background-position: center;
