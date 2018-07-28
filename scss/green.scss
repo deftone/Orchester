@@ -1,0 +1,569 @@
+// $color_medium: #852866;  //dunkles lila
+// $color_dark: #87005A;   //mittleres lila
+// $color_black: #4C0033;   // dunkles lila
+
+// $color_medium: #397FBF;  //dunkles blau
+// $color_dark: #0063BF;   //mittleres blau
+// $color_black: #003A70;   // dunkles blau
+
+$color_medium: #00855E;  //dunkles gruen
+$color_dark: #00694A;   //mittleres gruen
+$color_black: #004531;   // dunkles gruen
+
+// $color_medium: #990099;  //dunkles rose
+// $color_dark: #740794;   //mittleres lila
+// $color_black: #491178;   // dunkles lila
+
+// $color_medium: #808080;
+// $color_dark: #505050;
+// $color_black: #303030;
+
+$max-width: 991px;
+
+@import 'variables.scss';
+@import 'mixins.scss';
+body {
+  font-family: 'Lora', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+
+  color: white;
+  background-color: $color_dark;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+
+  margin: 0 0 35px;
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+
+  margin: 0 0 25px;
+  @media(min-width: 768px) {
+    font-size: 18px;
+    line-height: 1.6;
+
+    margin: 0 0 35px;
+  }
+}
+
+a {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+
+  color: $primary;
+  &:focus,
+  &:hover {
+    text-decoration: none;
+
+    color: darken($primary, 20%);
+  }
+}
+
+
+/*** GENERAL: MOBILE & DESKTOP SCREEN ***/
+@media only screen and (max-width: $max-width){
+  #hidden_mobile{
+    display: none;
+  }
+}
+
+@media only screen and (min-width: $max-width) {
+  #hidden_desktop{
+    display: none ;
+  }
+}
+
+#mainNav {
+  font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  border-bottom: 1px solid fade-out(white, .7);
+  .navbar-toggler {
+    font-size: 14px;
+
+    padding: 11px;
+
+    color: white;
+
+    border: 1px solid white;
+  }
+  .navbar-brand {
+    font-weight: 700;
+  }
+  a {
+    color: white;
+    text-shadow:
+      -1px -1px 0 #000,
+       1px -1px 0 #000,
+      -1px  1px 0 #000,
+       1px  1px 0 #000;
+  }
+  .navbar-nav {
+    .nav-item {
+      -webkit-transition: background 0.3s ease-in-out;
+      -moz-transition: background 0.3s ease-in-out;
+      transition: background 0.3s ease-in-out;
+      &:hover {
+        color: fade(white, 80%);
+        outline: none;
+        background-color: transparent;
+      }
+      &:active,
+      &:focus {
+        outline: none;
+        background-color: transparent;
+      }
+    }
+  }
+  @media(min-width:992px) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    -webkit-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+    -moz-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+    transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+    letter-spacing: 1px;
+
+    border-bottom: none;
+    // background: transparent;
+    background: $color_dark;
+    opacity: .7;
+    &.navbar-shrink {
+      padding-top: 10px;
+      padding-bottom: 10px;
+
+      border-bottom: 1px solid fade-out(white, .7);
+      opacity: 1;
+    }
+    .nav-link.active {
+      outline: none;
+      background-color: rgba(white, .3);
+      &:hover {
+        color: white;
+      }
+    }
+  }
+}
+
+.landingpage {
+  //less than 768px — extra small (xs)
+  @media(max-width:768px) {
+    background: url('../img/orchesterJanuar_680px.jpg') no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+  }
+
+  // 768-991px — small (sm)
+  @media only screen and (min-width: 769px) and (max-width: 991px){
+    background: url('../img/orchesterJanuar_991px.jpg') no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+  }
+
+  //992-1199px — medium (md)
+    @media only screen and (min-width: 992px) and (max-width: 1199px){
+    background: url('../img/orchesterJanuar_1200px.jpg') no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+  }
+
+  //greater than 1199px — large (lg)
+  @media(min-width:1200px) {
+  background: url('../img/orchesterJanuar_2000px.jpg') no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  }
+
+}
+
+.container_media{
+  img{
+    //xs and sm
+      @media only screen and (max-width: 991px){
+        padding: 5px;
+        height: auto;
+        width: auto;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    //992-1199px — medium (md)
+      @media only screen and (min-width: 992px) and (max-width: 1199px){
+        padding: 25px;
+        height: auto;
+        width: auto;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    //greater than 1199px — large (lg)
+    @media(min-width:1200px) {
+      padding: 10px 50px;
+      height: auto;
+      width: auto;
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+}
+
+.container_media_side{
+  @extend .container_media;
+  width: 40%;
+  padding: 20px;
+
+  @media(max-width:991px){
+    width: 80%;
+    padding: 10px;
+  }
+}
+
+.container_side{
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  padding: 15px;
+  width: 70%;
+
+  @media(max-width:991px){
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+}
+
+
+.red{
+  color: red;
+}
+
+.content-section {
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  h3{
+    font-size: 20px;
+  }
+
+  p{
+    font-family: sans-serif;
+  }
+
+  a{
+    color: white;
+    text-decoration: underline;
+    text-decoration-style: solid;
+  }
+}
+
+.center{
+  text-align: center;
+}
+
+.blocksatz{
+  text-align: justify;
+  padding: 10px 35px;
+  margin: 0;
+}
+
+.header_left{
+  padding-top: 40px;
+  padding-left: 50px;
+  margin: 0;
+  text-align: left;
+
+  @media(max-width:991px){
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+  }
+}
+
+.header_right{
+  padding-top: 40px;
+  padding-right: 50px;
+  margin: 0;
+  text-align: right;
+
+  @media(max-width:991px){
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+  }
+}
+
+.background_medium{
+  background-color: $color_medium;
+}
+
+
+.info-section-background{
+  background-color: $color_medium;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+
+  @media(max-width:991px){
+    background-color: $color_medium;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.info-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media(max-width:991px){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+
+//todo: rename to partitur background
+.termine-section {
+  display: flex;
+  color: white;
+  background: url('../img/PartiturAlleStimmen.jpg') no-repeat center center scroll;
+  background-color: white;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  p, h2, h3, h5{
+    color: $color_black;
+  }
+
+  p, h3 {
+    text-align: left;}
+
+  h3{
+    font-size: 20px;
+  }
+
+
+  ul{
+    padding: 0px 30px;
+    color: $color_black;
+    text-align: left;
+    font-family: sans-serif;
+    list-style-type: circle;
+  }
+
+
+
+  .termine{
+    background-color: white;
+    color: black;
+    border: 2px solid $color_black;
+    padding: 5px;
+  }
+
+//todo: hier verschiedene groessen fuer XS, SM, MD, LG, dann sollte es hoffentlich klappen!!
+  .galery{
+      background-color: white;
+      color: black;
+      opacity: 1;
+      border: 2px solid $color_black;
+      padding: 5px;
+
+      h2{
+        margin-bottom: 0;
+      }
+
+      /*
+      *  position: relative gives a new position context
+      */
+      .wrapper {
+        position: relative;
+      }
+
+      /*
+      *  The .carousel properties are for styling only
+      *  These properties can be changed or removed
+      */
+      .carousel {
+        height: 500px;
+      }
+
+      /*
+      *  Position the #transparent element in the top-right
+      *  of the .wrapper element
+      */
+      #transparent {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        /*
+        *  Styling only, the below can be changed or removed
+        *  depending on your use case
+        */
+        height: 500px;
+        width: 910px;  //in lg  beide anpassen fuer md, sm, xs! auch an den anderen stellen@@
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        a {
+          color: white;
+          opacity: .7;
+          font-size: 100px;
+        }
+
+        a:hover{
+            color: white;
+            cursor: pointer;
+          }
+      }
+
+
+      /*** JUMBOTRON ***/
+      .jumbotron {
+        height: 500px;  //images are 3680x2000px 368x200 739x400
+        padding-top: 10px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+   }
+}
+
+.jumbotron-orchester1{
+  background-image: url("../img/orchesterKonzertGross.jpg");
+}
+
+.jumbotron-orchester2{
+  background-image: url("../img/orchesterJanuar.jpg");
+}
+
+
+@media(min-width:992px) {
+  .content-section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+.btn {
+  font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+
+  border-radius: 0;
+}
+
+.btn-default {
+  color: $primary;
+  border: 1px solid $primary;
+  background-color: transparent;
+  &:focus,
+  &:hover {
+    color: black;
+    border: 1px solid $primary;
+    outline: none;
+    background-color: $primary;
+  }
+}
+
+ul.banner-social-buttons {
+  margin-top: 0;
+  @media(max-width: 1199px) {
+    margin-top: 15px;
+  }
+  @media(max-width:767px) {
+    li {
+      display: block;
+
+      margin-bottom: 20px;
+      padding: 0;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+footer {
+  background-color: $color_black;
+  padding: 50px 0;
+  p {
+    font-size: 14px;
+
+    margin: 0;
+  }
+}
+
+::-moz-selection {
+  background: #fcfcfc;
+  background: fade-out(white, .8);
+  text-shadow: none;
+}
+
+::selection {
+  background: #fcfcfc;
+  background: fade-out(white, .8);
+  text-shadow: none;
+}
+
+img::selection {
+  background: transparent;
+}
+
+img::-moz-selection {
+  background: transparent;
+}
+
+body {
+  -webkit-tap-highlight-color: fade-out(white, .8);
+}
