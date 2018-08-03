@@ -302,8 +302,18 @@ a {
       margin-bottom: 0; }
     .termine-section .galery .wrapper {
       position: relative; }
-    .termine-section .galery .carousel {
-      height: 500px; }
+    @media only screen and (max-width: 768px) {
+      .termine-section .galery .carousel {
+        height: 200px; } }
+    @media only screen and (max-width: 991px) {
+      .termine-section .galery .carousel {
+        height: 300px; } }
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+      .termine-section .galery .carousel {
+        height: 400px; } }
+    @media (min-width: 1200px) {
+      .termine-section .galery .carousel {
+        height: 500px; } }
     .termine-section .galery #transparent {
       position: absolute;
       top: 0;
@@ -312,8 +322,6 @@ a {
       *  Styling only, the below can be changed or removed
       *  depending on your use case
       */
-      height: 500px;
-      width: 910px;
       display: flex;
       align-items: center;
       justify-content: space-between; }
@@ -324,12 +332,39 @@ a {
       .termine-section .galery #transparent a:hover {
         color: white;
         cursor: pointer; }
+      @media only screen and (max-width: 768px) {
+        .termine-section .galery #transparent {
+          height: 300px;
+          width: 490px; } }
+      @media only screen and (min-width: 769px) and (max-width: 991px) {
+        .termine-section .galery #transparent {
+          height: 300px;
+          width: 560px; } }
+      @media only screen and (min-width: 992px) and (max-width: 1199px) {
+        .termine-section .galery #transparent {
+          height: 400px;
+          width: 760px; } }
+      @media (min-width: 1200px) {
+        .termine-section .galery #transparent {
+          height: 500px;
+          width: 910px; } }
     .termine-section .galery .jumbotron {
-      height: 500px;
       padding-top: 10px;
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat; }
+      @media only screen and (max-width: 768px) {
+        .termine-section .galery .jumbotron {
+          height: 200px; } }
+      @media only screen and (max-width: 991px) {
+        .termine-section .galery .jumbotron {
+          height: 300px; } }
+      @media only screen and (min-width: 992px) and (max-width: 1199px) {
+        .termine-section .galery .jumbotron {
+          height: 400px; } }
+      @media (min-width: 1200px) {
+        .termine-section .galery .jumbotron {
+          height: 500px; } }
 
 .jumbotron-orchester1 {
   background-image: url("../img/orchesterKonzertGross.jpg"); }

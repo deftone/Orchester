@@ -435,7 +435,26 @@ a {
       *  These properties can be changed or removed
       */
       .carousel {
-        height: 500px;
+        //xs
+          @media only screen and (max-width: 768px){
+            height: 200px;
+        }
+
+        //sm
+          @media only screen and (max-width: 991px){
+            height: 300px;
+        }
+
+        //992-1199px — medium (md)
+          @media only screen and (min-width: 992px) and (max-width: 1199px){
+            height: 400px;
+        }
+
+        //greater than 1199px — large (lg)
+        @media(min-width:1200px) {
+          height: 500px;
+        }
+
       }
 
       /*
@@ -451,8 +470,7 @@ a {
         *  Styling only, the below can be changed or removed
         *  depending on your use case
         */
-        height: 500px;
-        width: 910px;  //in lg  beide anpassen fuer md, sm, xs! auch an den anderen stellen@@
+
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -465,17 +483,62 @@ a {
         a:hover{
             color: white;
             cursor: pointer;
-          }
+        }
+
+        //xs
+          @media only screen and (max-width: 768px){
+            height: 300px;
+            width: 490px;
+        }
+
+        //sm
+          @media only screen and (min-width: 769px) and (max-width: 991px){
+            height: 300px;
+            width: 560px;
+        }
+
+        //992-1199px — medium (md)
+          @media only screen and (min-width: 992px) and (max-width: 1199px){
+            height: 400px;
+            width: 760px;
+        }
+
+        //greater than 1199px — large (lg)
+        @media(min-width:1200px) {
+          height: 500px;
+          width: 910px;  //in lg  beide anpassen fuer md, sm, xs! auch an den anderen stellen@@
+        }
+
       }
 
 
       /*** JUMBOTRON ***/
       .jumbotron {
-        height: 500px;  //images are 3680x2000px 368x200 739x400
+        // height: 500px;  //images are 3680x2000px 368x200 739x400
         padding-top: 10px;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+        //xs
+          @media only screen and (max-width: 768px){
+            height: 200px;
+        }
+
+        //sm
+          @media only screen and (max-width: 991px){
+            height: 300px;
+        }
+
+        //992-1199px — medium (md)
+          @media only screen and (min-width: 992px) and (max-width: 1199px){
+            height: 400px;
+        }
+
+        //greater than 1199px — large (lg)
+        @media(min-width:1200px) {
+          height: 500px;
+        }
+
       }
    }
 }
