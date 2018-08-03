@@ -331,10 +331,18 @@ a {
   }
 }
 
-.background_medium{
+.background-medium{
   background-color: $color_medium;
 }
 
+.partitur-background{
+  background: url('../img/PartiturAlleStimmen.jpg') no-repeat center center scroll;
+  background-color: white;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
 .info-section-background{
   background-color: $color_medium;
@@ -366,24 +374,21 @@ a {
 }
 
 
-//todo: rename to partitur background
 .termine-section {
   display: flex;
   color: white;
-  background: url('../img/PartiturAlleStimmen.jpg') no-repeat center center scroll;
-  background-color: white;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 
-  p, h2, h3, h5{
+  p, h2, h3, h5, h6{
     color: $color_black;
   }
 
-  p, h3 {
+  p, h3, h6 {
     text-align: left;}
 
+  h6{
+    padding: 10px;
+    margin: 0px;
+  }
   h3{
     font-size: 20px;
   }

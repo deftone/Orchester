@@ -221,8 +221,16 @@ a {
       margin: 0;
       text-align: center; } }
 
-.background_medium {
+.background-medium {
   background-color: #397FBF; }
+
+.partitur-background {
+  background: url("../img/PartiturAlleStimmen.jpg") no-repeat center center scroll;
+  background-color: white;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
 .info-section-background {
   background-color: #397FBF;
@@ -251,17 +259,14 @@ a {
 
 .termine-section {
   display: flex;
-  color: white;
-  background: url("../img/PartiturAlleStimmen.jpg") no-repeat center center scroll;
-  background-color: white;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
-  .termine-section p, .termine-section h2, .termine-section h3, .termine-section h5 {
+  color: white; }
+  .termine-section p, .termine-section h2, .termine-section h3, .termine-section h5, .termine-section h6 {
     color: #003A70; }
-  .termine-section p, .termine-section h3 {
+  .termine-section p, .termine-section h3, .termine-section h6 {
     text-align: left; }
+  .termine-section h6 {
+    padding: 10px;
+    margin: 0px; }
   .termine-section h3 {
     font-size: 20px; }
   .termine-section ul {
