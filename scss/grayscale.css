@@ -1,12 +1,16 @@
 html {
-  font-size: 10px; }
+  font-size: 10px;
+  width: 100%;
+  height: 100%; }
 
 body {
   font-family: 'Lora', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 1.8rem;
   position: relative;
   color: white;
-  background-color: #0063BF; }
+  background-color: #0063BF;
+  width: 100%;
+  height: 100%; }
 
 h1,
 h2,
@@ -38,6 +42,9 @@ a {
   a:focus, a:hover {
     text-decoration: none;
     color: #1d9b6c; }
+
+.roundedCorners {
+  border-radius: 2rem; }
 
 /*** GENERAL: MOBILE & DESKTOP SCREEN ***/
 @media only screen and (max-width: 991px) {
@@ -113,21 +120,24 @@ a {
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
-      background-size: cover; } }
+      background-size: cover;
+      height: 100%; } }
   @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .landingpage {
       background: url("../img/orchesterJanuar_1200px.jpg") no-repeat center center scroll;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
-      background-size: cover; } }
+      background-size: cover;
+      height: 100%; } }
   @media (min-width: 1200px) {
     .landingpage {
       background: url("../img/orchesterJanuar_2000px.jpg") no-repeat center center scroll;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
-      background-size: cover; } }
+      background-size: cover;
+      height: 100%; } }
 
 @media only screen and (max-width: 991px) {
   .container_media img, .container_media_side img {
@@ -193,7 +203,7 @@ a {
     text-decoration: underline;
     text-decoration-style: solid; }
   .content-section img {
-    padding-bottom: 30px; }
+    margin-bottom: 30px; }
 
 .center {
   text-align: center; }

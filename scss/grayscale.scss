@@ -10,6 +10,8 @@ $max-width: 991px;
 
 html{
   font-size: 10px; //1rem=10px
+  width: 100%;
+  height: 100%;
 }
 
 @import 'variables.scss';
@@ -20,6 +22,8 @@ body {
   position: relative;
   color: white;
   background-color: $color_dark;
+  width: 100%;
+  height: 100%;
 }
 
 h1,
@@ -58,7 +62,9 @@ a {
   }
 }
 
-
+.roundedCorners{
+    border-radius: 2rem;
+}
 /*** GENERAL: MOBILE & DESKTOP SCREEN ***/
 @media only screen and (max-width: $max-width){
   #hidden_mobile{
@@ -166,7 +172,7 @@ a {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-
+    height: 100%;
   }
 
   //992-1199px — medium (md)
@@ -176,7 +182,7 @@ a {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-
+    height: 100%;
   }
 
   //greater than 1199px — large (lg)
@@ -186,7 +192,7 @@ a {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-
+  height: 100%;
   }
 
 }
@@ -278,7 +284,7 @@ a {
   }
 
   img{
-    padding-bottom: 30px;
+    margin-bottom: 30px;
   }
 }
 
