@@ -34,15 +34,6 @@ p {
       line-height: 1.6;
       margin: 0 0 35px; } }
 
-a {
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  color: #42DCA3; }
-  a:focus, a:hover {
-    text-decoration: none;
-    color: #1d9b6c; }
-
 .roundedCorners {
   border-radius: 2rem; }
 
@@ -73,7 +64,8 @@ a {
     color: white;
     border: 1px solid white; }
   #mainNav .navbar-brand {
-    font-weight: 700; }
+    font-weight: 700;
+    font-size: 2rem; }
   #mainNav a {
     color: white;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px  1px 0 #000, 1px  1px 0 #000; }
@@ -239,7 +231,7 @@ a {
   background-color: #397FBF; }
 
 .partitur-background {
-  background: url("../img/PartiturAlleStimmen.jpg") no-repeat center center scroll;
+  background: url("../img/PartiturAlleStimmenNochHeller.jpg") no-repeat center center scroll;
   background-color: white;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -389,6 +381,9 @@ a {
 
 .jumbotron-orchester2 {
   background-image: url("../img/orchesterJanuar.jpg"); }
+
+.jumbotron-orchester3 {
+  background-image: url("../img/orchesterJanuar2.png"); }
 
 @media (min-width: 992px) {
   .content-section {
